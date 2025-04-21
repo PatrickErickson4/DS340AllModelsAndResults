@@ -13,7 +13,7 @@ Datasets include pure
   - **Tomato-Merged**: PlantVillage injected with images from 6 other datasets. (Novelty)
 
 ### Steps to run the Code
-### Ensure you are using a Python 3.10.9. The modules are not compatible with other versions of python.
+### Ensure you are using a Python 3.10.9 Environment. The modules are not compatible with other versions of python.
 Ensure you also have pip 25.0.1
 
 **If you wish to use CUDA, use CUDA 11.2 and install cuDNN 8.1 This is highly recommended if you wish to TRAIN any model.**
@@ -33,7 +33,7 @@ Ensure you also have pip 25.0.1
   ```
   - Step 6: Go into exampleTrainer.ipynb to see the formatting of the model training and testing.
 
-Feel free to use evalAllModels.ipynb to verify runs. **I also highly recommend you set up a python environment**
+Feel free to use evalAllModels.ipynb to verify runs. 
 
 ### Models
 The following model names in the directory correspond to the following features turned on or off in our ablation study (note all have an extra dense layer):
