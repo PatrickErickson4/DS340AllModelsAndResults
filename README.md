@@ -5,17 +5,43 @@ install the requirements with requirements.txt.
 View the jupyter notebooks to see proof of model training. 
 ## DO NOT RUN trainAllModels.ipynb. This file is to show that the models were indeed trained by us
 
+## Datasets
+---
 
-### Steps to run the Code 
-### Ensure you are using a Python 3.11.X or lower. The modules are not compatible with 3.12+
+Datasets include pure 
+  - **PlantVillage**: denoted as PlantVillage-Tomato
+  - **Tomato-Merged**: PlantVillage injected with images from 6 other datasets. (Novelty)
+
+### Steps to run the Code
+### Ensure you are using a Python 3.10.X or lower. The modules are not compatible with 3.11+
+Ensure you also have pip 25.0.1
+
+**If you wish to use CUDA, use CUDA 11.2.X and install cuDNN 8.1 This is highly recommended if you wish to TRAIN any model.**
   - Step 1: Create a folder you want the file to be.
   - Step 2: Open your command line of choice (powershell, cmd, mac alternatives, linux, etc.)
   - Step 3: Navigate to a projects folder with ```cd yourFolderName```
   - Step 4: Clone the repository with ```git clone https://github.com/PatrickErickson4/NeuralNetLesson.git```
-  - Step 5: Install the dependencies with pip install -r requirements.txt
-  - Feel free to use evalAllModels.ipynb to verify runs
+  - Step 5: Install the dependencies with ```pip install -r requirements.txt```
+  - Step 6: Go into exampleTrainer.ipynb to see the formatting of the model training and testing.
 
+Feel free to use evalAllModels.ipynb to verify runs. **I also highly recommend you set up a python environment**
 
+### Models
+The following model names in the directory correspond to the following features turned on or off in our ablation study (note all have an extra dense layer):
+  - **ExampleModel**: A model that you can play around with in exampleTrainer.ipynb
+  - **MobileVITCLAHE**: MobileVIT, trained with CLAHE pre-processing and data augmentations
+  - **MobileCLAHENoAug** MobileVIT, trained with only pre-processing and data augmentations
+  - **MobileVITDense**: MobileVIT, trained with no augmentations.
+  - **MobileVITNoCLAHE**: MobileVIT, trianed with only augmentations.
+  - **V2ParentPaperOnNewData**: The parent paper's best model, with CLAHE and augmentations as stated within the paper.
+  - **V3LargeCLAHE**: MobileVIT, trained with CLAHE pre-processing and data augmentations
+  - **V3LargeCLAHENoAug** MobileVIT, trained with only pre-processing and data augmentations
+  - **V3LargeDense**: MobileVIT, trained with no augmentations.
+  - **V3LargeNoCLAHE**: MobileVIT, trianed with only augmentations.
+  - **V3SmallCLAHE**: MobileVIT, trained with CLAHE pre-processing and data augmentations
+  - **V3SmallCLAHENoAug** MobileVIT, trained with only pre-processing and data augmentations
+  - **V3SmallVITDense**: MobileVIT, trained with no augmentations.
+  - **V3SmallVITNoCLAHE**: MobileVIT, trianed with only augmentations.
 ### Original Readme
 ---
 
