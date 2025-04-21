@@ -21,7 +21,7 @@ Ensure you also have pip 25.0.1
   - Step 2: Open your command line of choice (powershell, cmd, mac alternatives, linux, etc.)
   - Step 3: Navigate to a projects folder with ```cd yourFolderName```
   - Step 4: Clone the repository with ```git clone https://github.com/PatrickErickson4/NeuralNetLesson.git```
-  - Step 5: Install the dependencies with ```pip install -r requirements.txt```
+  - Step 5: Install the dependencies with ```pip install --upgrade --force-reinstall -r requirements.txt```
   - Step 6: Go into exampleTrainer.ipynb to see the formatting of the model training and testing.
 
 Feel free to use evalAllModels.ipynb to verify runs. **I also highly recommend you set up a python environment**
