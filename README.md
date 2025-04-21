@@ -31,6 +31,7 @@ Ensure you also have pip 25.0.1
   ```
   pip install --upgrade --force-reinstall -r requirements.txt
   ```
+  ##### **NOTE: some of the requirements will downgrade your pip version. Make sure you re-update it as need-be.**
   - Step 6: Go into exampleTrainer.ipynb to see the formatting of the model training and testing.
 
 Feel free to use evalAllModels.ipynb to verify runs. 
