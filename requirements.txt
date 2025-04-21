@@ -1,0 +1,12 @@
+tensorflow
+tensorflow_hub
+keras
+clint
+requests
+numpy
+pandas
+matplotlib
+open-cv
+seaborn
+scikit-learn
+jupyter
