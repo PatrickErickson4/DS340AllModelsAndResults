@@ -13,10 +13,10 @@ Datasets include pure
   - **Tomato-Merged**: PlantVillage injected with images from 6 other datasets. (Novelty)
 
 ### Steps to run the Code
-### Ensure you are using a Python 3.10.X or lower. The modules are not compatible with 3.11+
+### Ensure you are using a Python 3.10.9. The modules are not compatible with other versions of python.
 Ensure you also have pip 25.0.1
 
-**If you wish to use CUDA, use CUDA 11.2.X and install cuDNN 8.1 This is highly recommended if you wish to TRAIN any model.**
+**If you wish to use CUDA, use CUDA 11.2 and install cuDNN 8.1 This is highly recommended if you wish to TRAIN any model.**
   - Step 1: Create a folder you want the file to be.
   - Step 2: Open your command line of choice (powershell, cmd, mac alternatives, linux, etc.)
   - Step 3: Navigate to a projects folder with ```cd yourFolderName```
